@@ -14,7 +14,7 @@ $ pip install fundamentalista
 ```
 
 # Running
-- Retorna um DataFrame com o Demonstrativo de Resultado do Exercício (DRE) dos períodos disponíveis:
+- Retorna um DataFrame com o Demonstrativo de Resultado do Exercício (DRE) dos períodos disponíveis em (R$ mil):
 ```
 from fundamentalista.fundamentalista import findata
 
@@ -24,41 +24,41 @@ df = findata.dre(tick)
 print(df)
 ```
 
-- Retorna um DataFrame com o Balanço Patrimonial do Ativo dos períodos disponíveis:
+- Retorna um DataFrame com o Balanço Patrimonial do Ativo dos períodos disponíveis em (R$ mil):
 ```
 from fundamentalista.fundamentalista import findata
 
-tick = "PETR4"
+tick = "ITUB3"
 df = findata.bpa(tick)
 
 print(df)
 ```
 
-- Retorna um DataFrame com o Balanço Patrimonial do Passivo dos períodos disponíveis:
+- Retorna um DataFrame com o Balanço Patrimonial do Passivo dos períodos disponíveis em (R$ mil):
 ```
 from fundamentalista.fundamentalista import findata
 
-tick = "PETR4"
+tick = "BBDC4"
 df = findata.bpp(tick)
 
 print(df)
 ```
 
-- Retorna um DataFrame com o Fluxo de Caixa dos períodos disponíveis:
+- Retorna um DataFrame com o Fluxo de Caixa dos períodos disponíveis em (R$ mil):
 ```
 from fundamentalista.fundamentalista import findata
 
-tick = "PETR4"
+tick = "AZUL4"
 df = findata.fca(tick)
 
 print(df)
 ```
 
-- Retorna um DataFrame com o Demonstração do Valor Adicionado dos períodos disponíveis:
+- Retorna um DataFrame com o Demonstração do Valor Adicionado dos períodos disponíveis em (R$ mil):
 ```
 from fundamentalista.fundamentalista import findata
 
-tick = "PETR4"
+tick = "VVAR3"
 df = findata.dva(tick)
 
 print(df)
