@@ -1,0 +1,8 @@
+README.md
+setup.py
+fundamentalista/fundamentalista.py
+fundamentalista.egg-info/PKG-INFO
+fundamentalista.egg-info/SOURCES.txt
+fundamentalista.egg-info/dependency_links.txt
+fundamentalista.egg-info/requires.txt
+fundamentalista.egg-info/top_level.txt

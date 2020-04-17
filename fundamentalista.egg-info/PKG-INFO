@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: fundamentalista
+Version: 0.0.1
+Summary: Coletor de dados financeiros de empresas listadas na B3
+Home-page: https://github.com/victoracoelho/fundamentalista
+Author: Victor Coelho
+Author-email: victoracoelho22@gmail.com
+License: MIT License
+Description: # fundamentalista
+        Coletor de dados financeiros de empresas listadas na B3
+        
+        # Dependencies
+        ```
+        pandas 1.0.3
+        ```
+        
+        # Installation
+        Instalar diretamente pelo PyPI:
+        ```
+        $ pip install fundamentalista
+        ```
+        
+        # Running
+        - Retorna um DataFrame com o Demonstrativo de Resultado do ExercÃ­cio (DRE) dos perÃ­odos disponÃ­veis:
+        ```
+        from fundamentalista import findata
+        
+        tick = "PETR4"
+        df = findata.dre(tick)
+        
+        print(df)
+        ```
+        
+        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Ativo dos perÃ­odos disponÃ­veis:
+        ```
+        from fundamentalista import findata
+        
+        tick = "PETR4"
+        df = findata.bpa(tick)
+        
+        print(df)
+        ```
+        
+        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Passivo dos perÃ­odos disponÃ­veis:
+        ```
+        from fundamentalista import findata
+        
+        tick = "PETR4"
+        df = findata.bpp(tick)
+        
+        print(df)
+        ```
+        
+        - Retorna um DataFrame com o Fluxo de Caixa dos perÃ­odos disponÃ­veis:
+        ```
+        from fundamentalista import findata
+        
+        tick = "PETR4"
+        df = findata.fca(tick)
+        
+        print(df)
+        ```
+        
+        - Retorna um DataFrame com o DemonstraÃ§Ã£o do Valor Adicionado dos perÃ­odos disponÃ­veis:
+        ```
+        from fundamentalista import findata
+        
+        tick = "PETR4"
+        df = findata.dva(tick)
+        
+        print(df)
+        ```
+        
+Keywords: Análise Fundamentalista
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
