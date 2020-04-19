@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: fundamentalista
-Version: 0.0.1
-Summary: Coletor de dados financeiros de empresas listadas na B3
+Version: 0.0.2
+Summary: Coletor de dados financeiros de empresas listadas na B3 VISITE: https://github.com/victoracoelho/fundamentalista
 Home-page: https://github.com/victoracoelho/fundamentalista
 Author: Victor Coelho
 Author-email: victoracoelho22@gmail.com
@@ -12,6 +12,7 @@ Description: # fundamentalista
         # Dependencies
         ```
         pandas 1.0.3
+        lxml <- NEED TO BE INSTALLED
         ```
         
         # Installation
@@ -21,9 +22,9 @@ Description: # fundamentalista
         ```
         
         # Running
-        - Retorna um DataFrame com o Demonstrativo de Resultado do ExercÃ­cio (DRE) dos perÃ­odos disponÃ­veis:
+        - Retorna um DataFrame com o Demonstrativo de Resultado do ExercÃ­cio (DRE) dos perÃ­odos disponÃ­veis em (R$ mil):
         ```
-        from fundamentalista import findata
+        from fundamentalista.fundamentalista import findata
         
         tick = "PETR4"
         df = findata.dre(tick)
@@ -31,41 +32,41 @@ Description: # fundamentalista
         print(df)
         ```
         
-        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Ativo dos perÃ­odos disponÃ­veis:
+        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Ativo dos perÃ­odos disponÃ­veis em (R$ mil):
         ```
-        from fundamentalista import findata
+        from fundamentalista.fundamentalista import findata
         
-        tick = "PETR4"
+        tick = "ITUB3"
         df = findata.bpa(tick)
         
         print(df)
         ```
         
-        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Passivo dos perÃ­odos disponÃ­veis:
+        - Retorna um DataFrame com o BalanÃ§o Patrimonial do Passivo dos perÃ­odos disponÃ­veis em (R$ mil):
         ```
-        from fundamentalista import findata
+        from fundamentalista.fundamentalista import findata
         
-        tick = "PETR4"
+        tick = "BBDC4"
         df = findata.bpp(tick)
         
         print(df)
         ```
         
-        - Retorna um DataFrame com o Fluxo de Caixa dos perÃ­odos disponÃ­veis:
+        - Retorna um DataFrame com o Fluxo de Caixa dos perÃ­odos disponÃ­veis em (R$ mil):
         ```
-        from fundamentalista import findata
+        from fundamentalista.fundamentalista import findata
         
-        tick = "PETR4"
+        tick = "AZUL4"
         df = findata.fca(tick)
         
         print(df)
         ```
         
-        - Retorna um DataFrame com o DemonstraÃ§Ã£o do Valor Adicionado dos perÃ­odos disponÃ­veis:
+        - Retorna um DataFrame com o DemonstraÃ§Ã£o do Valor Adicionado dos perÃ­odos disponÃ­veis em (R$ mil):
         ```
-        from fundamentalista import findata
+        from fundamentalista.fundamentalista import findata
         
-        tick = "PETR4"
+        tick = "VVAR3"
         df = findata.dva(tick)
         
         print(df)
