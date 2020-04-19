@@ -14,4 +14,4 @@ author_email='victoracoelho22@gmail.com',
 keywords='Análise Fundamentalista', 
 description='Coletor de dados financeiros de empresas listadas na B3 VISITE: https://github.com/victoracoelho/fundamentalista', 
 packages=['fundamentalista'], 
-install_requires=['pandas'])
+install_requires=['pandas', 'lxml'])
