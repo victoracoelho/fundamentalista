@@ -78,9 +78,10 @@ class findata():
             if len(t) == 11:
                 lista_19.append(t[:7])
         to_float_19 = [float(i) for i in lista_19]
-        new_df = pd.DataFrame(dre['Descrição'][1:])
+        new_df = pd.DataFrame(dre['Descrição'][0:])
         new_df['2019'] = pd.DataFrame(to_float_19)
         new_df['2018'] = pd.DataFrame(to_float_18)
+        new_df['Descrição'] = new_df['Descrição'].shift(-1)
         return new_df
 
 
@@ -157,9 +158,10 @@ class findata():
             if len(t) == 11:
                 lista_19.append(t[:7])
         to_float_19 = [float(i) for i in lista_19]
-        new_df = pd.DataFrame(dre['Descrição'][1:])
+        new_df = pd.DataFrame(dre['Descrição'][0:])
         new_df['2019'] = pd.DataFrame(to_float_19)
         new_df['2018'] = pd.DataFrame(to_float_18)
+        new_df['Descrição'] = new_df['Descrição'].shift(-1)
         return new_df
 
 
@@ -236,9 +238,10 @@ class findata():
             if len(t) == 11:
                 lista_19.append(t[:7])
         to_float_19 = [float(i) for i in lista_19]
-        new_df = pd.DataFrame(dre['Descrição'][1:])
+        new_df = pd.DataFrame(dre['Descrição'][0:])
         new_df['2019'] = pd.DataFrame(to_float_19)
         new_df['2018'] = pd.DataFrame(to_float_18)
+        new_df['Descrição'] = new_df['Descrição'].shift(-1)
         return new_df
 
 
@@ -316,9 +319,10 @@ class findata():
             if len(t) == 11:
                 lista_19.append(t[:7])
         to_float_19 = [float(i) for i in lista_19]
-        new_df = pd.DataFrame(dre['Descrição'][1:])
+        new_df = pd.DataFrame(dre['Descrição'][0:])
         new_df['2019'] = pd.DataFrame(to_float_19)
         new_df['2018'] = pd.DataFrame(to_float_18)
+        new_df['Descrição'] = new_df['Descrição'].shift(-1)
         return new_df
 
 
@@ -396,8 +400,9 @@ class findata():
             if len(t) == 11:
                 lista_19.append(t[:7])
         to_float_19 = [float(i) for i in lista_19]
-        new_df = pd.DataFrame(dre['Descrição'][1:])
+        new_df = pd.DataFrame(dre['Descrição'][0:])
         new_df['2019'] = pd.DataFrame(to_float_19)
         new_df['2018'] = pd.DataFrame(to_float_18)
+        new_df['Descrição'] = new_df['Descrição'].shift(-1)
         return new_df
 
